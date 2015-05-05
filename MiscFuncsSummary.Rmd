@@ -1,0 +1,9 @@
+---
+title: "MiscFuncs"
+author: "Devon Brackbill"
+date: "Tuesday, May 05, 2015"
+output: html_document
+---
+
+MiscFuncs is a repo of miscellaneous functions in R.
+

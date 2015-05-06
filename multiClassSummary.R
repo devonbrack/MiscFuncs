@@ -61,8 +61,10 @@ multiClassSummary <- function (data, lev = NULL, model = NULL){
   if (length(levels(data[, "pred"]) == 2)) {
     # Change name ordering to place most useful first
     # May want to remove some of these eventually
-    stats <- stats[c("ROC", "Sensitivity", "Specificity", "Accuracy", "Kappa", "logLoss",
-                     "AccuracyLower", "AccuracyUpper", "AccuracyPValue", "McnemarPValue",
+    stats <- stats[c("logLoss", "ROC", "Sensitivity", "Specificity", 
+                     "Accuracy", "Kappa", 
+                     "AccuracyLower", "AccuracyUpper",
+                     "AccuracyPValue", "McnemarPValue",
                      "Pos_Pred_Value", "Neg_Pred_Value", "Detection_Rate",
                      "Balanced_Accuracy")]
   }

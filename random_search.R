@@ -2,7 +2,15 @@
 # FROM: https://www.kaggle.com/c/otto-group-product-classification-challenge/forums/t/12947/achieve-0-50776-on-the-leaderboard-in-a-minute-with-xgboost?page=6
 # FROM: larry77
 
-random_search <- function(n_set, threads){
+# ARGUMENTS:
+  # n_set : number of random search parameters to create
+  # threads : number of cores on machine
+
+# Just run this function to create a list of random parameters
+# then, use in xgboost, or more likely cv.xgb
+
+
+random_search_grid_xgboost <- function(n_set, threads){
   
   #param is a list of parameters
   
